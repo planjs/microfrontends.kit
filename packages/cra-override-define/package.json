@@ -1,0 +1,34 @@
+{
+  "name": "cra-override-define",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "DefinePlugin",
+    "customize-cra",
+    "webpack"
+  ],
+  "homepage": "https://github.com/planjs/microfrontends.kit/tree/master/packages/cra-override-define#readme",
+  "bugs": {
+    "url": "https://github.com/planjs/microfrontends.kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planjs/microfrontends.kit.git"
+  },
+  "license": "ISC",
+  "author": "fupeng <fupenglxy@gmail.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/cra-override-define.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "customize-cra": "*"
+  }
+}
