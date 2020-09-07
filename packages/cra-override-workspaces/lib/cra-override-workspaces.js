@@ -1,21 +1,17 @@
 const { monorepoDependenciesLocalPaths } = require('monorepo-dependencies');
+const {
+  removeModuleScopePlugin,
+  babelInclude,
+  override,
+} = require('customize-cra');
 
 module.exports = craOverrideWorkspaces;
 
-function craOverrideWorkspaces() {
+function craOverrideWorkspaces(appSrc, pkgName = process.env.npm_package_name) {
   process.env.SKIP_PREFLIGHT_CHECK = true;
-  const { paths } = require('react-app-rewired');
-  const {
-    removeModuleScopePlugin,
-    babelInclude,
-    override,
-  } = require('customize-cra');
 
   return override(
     removeModuleScopePlugin(),
-    babelInclude([
-      paths.appSrc,
-      ...monorepoDependenciesLocalPaths(process.env.npm_package_name),
-    ])
+    babelInclude([appSrc, ...monorepoDependenciesLocalPaths(pkgName)])
   );
 }
