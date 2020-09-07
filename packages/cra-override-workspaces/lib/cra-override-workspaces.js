@@ -1,17 +1,22 @@
 const { monorepoDependenciesLocalPaths } = require('monorepo-dependencies');
 const {
-  removeModuleScopePlugin,
-  babelInclude,
   override,
+  getBabelLoader,
+  removeModuleScopePlugin,
 } = require('customize-cra');
 
 module.exports = craOverrideWorkspaces;
 
-function craOverrideWorkspaces(appSrc, pkgName = process.env.npm_package_name) {
+function craOverrideWorkspaces(pkgName = process.env.npm_package_name) {
   process.env.SKIP_PREFLIGHT_CHECK = true;
 
-  return override(
-    removeModuleScopePlugin(),
-    babelInclude([appSrc, ...monorepoDependenciesLocalPaths(pkgName)])
-  );
+  return override(config => {
+    const babelLoad = getBabelLoader(config);
+    babelLoad.include = [
+      // paths.appSrc
+      babelLoad.include,
+      ...(monorepoDependenciesLocalPaths(pkgName) || []),
+    ];
+    return config;
+  }, removeModuleScopePlugin());
 }
