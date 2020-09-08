@@ -1,7 +1,7 @@
 {
   "name": "cra-override-workspaces",
-  "version": "customize-cra support workspace",
-  "description": "> TODO: description",
+  "version": "0.0.2",
+  "description": "customize-cra support workspace",
   "homepage": "https://github.com/planjs/microfrontends.kit/tree/master/packages/cra-override-workspaces#readme",
   "bugs": {
     "url": "https://github.com/planjs/microfrontends.kit/issues"
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "monorepo-dependencies": "^0.0.1",
-    "customize-cra": "^1.0.0"
+    "customize-cra": "^1.0.0",
+    "monorepo-dependencies": "^0.0.1"
   },
   "peerDependencies": {
     "customize-cra": ">=1.x",
