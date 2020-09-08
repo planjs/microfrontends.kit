@@ -1,6 +1,6 @@
 {
   "name": "cra-override-workspaces",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "customize-cra support workspace",
   "homepage": "https://github.com/planjs/microfrontends.kit/tree/master/packages/cra-override-workspaces#readme",
   "bugs": {

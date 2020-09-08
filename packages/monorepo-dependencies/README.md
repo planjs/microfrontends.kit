@@ -4,7 +4,7 @@
 
 ## Usage
 
-```
+```javascript
 const { monorepoDependenciesLocalPaths } = require('monorepo-dependencies');
 
 monorepoDependenciesLocalPaths('@scope/core');

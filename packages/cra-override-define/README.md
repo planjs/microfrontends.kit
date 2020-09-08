@@ -4,7 +4,7 @@
 
 ## Usage
 
-```
+```javascript
 const craOverrideDefine = require('cra-override-define');
 
 // TODO: DEMONSTRATE API

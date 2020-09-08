@@ -4,7 +4,7 @@
 <br/>
 [![NPM](https://nodei.co/npm/cra-override-workspaces.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/cra-override-workspaces)
 
-> customize-cra support workspace
+> customize-cra support lerna or yarn workspace
 
 ## Usage
 
