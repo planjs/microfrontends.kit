@@ -1,0 +1,26 @@
+{
+  "name": "cra-add-worker-loader",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "fupeng <fupenglxy@gmail.com>",
+  "homepage": "https://github.com/planjs/microfrontends.kit/tree/master/packages/cra-add-worker-loader#readme",
+  "license": "ISC",
+  "main": "lib/cra-add-worker-loader.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planjs/microfrontends.kit.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/planjs/microfrontends.kit/issues"
+  }
+}
