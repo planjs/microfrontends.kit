@@ -13,8 +13,9 @@ function craOverrideWorkspaces(pkgName = process.env.npm_package_name) {
   return override(config => {
     const babelLoad = getBabelLoader(config);
     babelLoad.include = [
-      // paths.appSrc
-      babelLoad.include,
+      ...(Array.isArray(babelLoad.include)
+        ? babelLoad.include
+        : [babelLoad.include]),
       ...(monorepoDependenciesLocalPaths(pkgName) || []),
     ];
     return config;

@@ -1,6 +1,6 @@
 {
   "name": "monorepo-dependencies",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "monorepo dependencies",
   "keywords": [
     "dependencies",
@@ -19,21 +19,21 @@
   },
   "license": "ISC",
   "author": "fupeng <fupenglxy@gmail.com>",
-  "files": [
-    "lib"
-  ],
   "main": "lib/monorepo-dependencies.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "devDependencies": {
-    "@lerna/package": "^3.16.0",
-    "@lerna/package-graph": "^3.18.5",
-    "@lerna/project": "^3.21.0",
+  "dependencies": {
+    "@lerna/package": "^4.0.0",
+    "@lerna/package-graph": "^4.0.0",
+    "@lerna/project": "^4.0.0",
     "find-yarn-workspace-root": "^2.0.0",
     "load-json-file": "^6.2.0"
   }

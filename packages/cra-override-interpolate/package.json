@@ -1,10 +1,17 @@
 {
   "name": "cra-override-interpolate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
-  "author": "fupeng <fupenglxy@gmail.com>",
   "homepage": "https://github.com/planjs/microfrontends.kit/tree/master/packages/cra-override-interpolate#readme",
+  "bugs": {
+    "url": "https://github.com/planjs/microfrontends.kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planjs/microfrontends.kit.git"
+  },
   "license": "ISC",
+  "author": "fupeng <fupenglxy@gmail.com>",
   "main": "lib/cra-override-interpolate.js",
   "directories": {
     "lib": "lib",
@@ -13,15 +20,8 @@
   "files": [
     "lib"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/planjs/microfrontends.kit.git"
-  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/planjs/microfrontends.kit/issues"
   },
   "peerDependencies": {
     "customize-cra": "*"

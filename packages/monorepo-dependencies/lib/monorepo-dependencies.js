@@ -2,9 +2,9 @@ const path = require('path');
 const fs = require('fs');
 const loadJsonFileSync = require('load-json-file').sync;
 const { makeSyncFileFinder } = require('@lerna/project/lib/make-file-finder');
-const Package = require('@lerna/package');
-const Project = require('@lerna/project');
-const PackageGraph = require('@lerna/package-graph');
+const { Package } = require('@lerna/package');
+const { Project } = require('@lerna/project');
+const { PackageGraph } = require('@lerna/package-graph');
 const findYarnWorkspaceRoot = require('find-yarn-workspace-root');
 const { spawn } = require('./spawn');
 
