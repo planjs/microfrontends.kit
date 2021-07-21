@@ -36,5 +36,6 @@
     "@lerna/project": "^4.0.0",
     "find-yarn-workspace-root": "^2.0.0",
     "load-json-file": "^6.2.0"
-  }
+  },
+  "gitHead": "983360ab3e7f630ca1d9385bd2c8b7eb128cca32"
 }
