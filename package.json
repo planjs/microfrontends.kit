@@ -45,6 +45,7 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^9.1.2",
     "@planjs/fabric": "^0.0.76",
     "conventional-changelog-cli": "^2.1.0",

@@ -81,7 +81,7 @@ function yarnWorkspaceDependenciesLocalPaths(appName, baseDir = process.cwd()) {
  * Get the local dependency package path of lerna and yarn in the workspace
  * @param appName
  * @param baseDir
- * @return {Uint8Array|BigInt64Array|*[]|Float64Array|Int8Array|Float32Array|Int32Array|Uint32Array|Uint8ClampedArray|BigUint64Array|Int16Array|Uint16Array|any}
+ * @return {string[]}
  */
 function monorepoDependenciesLocalPaths(appName, baseDir) {
   const projects = lernaDependenciesProject(appName, baseDir);
