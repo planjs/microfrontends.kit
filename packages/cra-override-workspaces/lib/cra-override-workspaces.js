@@ -19,14 +19,14 @@ function craOverrideWorkspaces(pkgName = process.env.npm_package_name) {
     ['esbuild', 'swc'].forEach((loaderName) => {
       const loaders = config.module.rules.find((rule) => Array.isArray(rule.oneOf)).oneOf;
       if (loaders) {
-        const esbuildLoader = loaders.find((rule) => {
+        const loader = loaders.find((rule) => {
           return rule.loader && rule.loader.includes(loaderName);
         });
-        if (esbuildLoader) {
-          esbuildLoader.include = [
-            ...(Array.isArray(esbuildLoader.include)
-              ? esbuildLoader.include
-              : [esbuildLoader.include]),
+        if (loader) {
+          loader.include = [
+            ...(Array.isArray(loader.include)
+              ? loader.include
+              : [loader.include]),
             ...(monorepoDependenciesLocalPaths(pkgName) || []),
           ];
         }
